@@ -3,21 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>Main</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <strong>main</strong>
-            <a href="about.html">about 2020mods</a>
-        </nav>
-    </header>
+    <div class="site-wrapper">
+        <div class="sidebar">
+            <div class="sidebar-nav">
+                <a href="index.html" class="nav-item active">mods</a>
+                <a href="about.html" class="nav-item">about</a>
+                <a href="deadmods.html" class="nav-item">dead mods</a>
+            </div>
+            <div class="sidebar-footer">
+                by rap_god20<br>
+                vibecoded shit
+            </div>
+        </div>
 
-    <main>
-        <h1>2020mods main</h1>
-        <p>1</p>
-    </main>
+        <div class="main-content">
+            <div class="mod-banner">
+                <div class="mod-left-content">
+                    <div class="mod-image-slot">
+                        <img src="logonew.png" alt="mod view">
+                    </div>
+                    <div>
+                        <button class="download-link" onclick="window.open('https://mega.nz/file/IJFUXaqI#hId2Z2ZpCj-NUUY0nAk4AJTxEWT_PniNImxOacUEeHk', '_blank')">
+                            DOWNLOAD ON MEGA
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="about-toggle">
+                    <label for="about-toggle" class="about-label-right">about<span class="about-arrow">▼</span></label>
+
+                    <div class="about-text-block">
+                        1
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
