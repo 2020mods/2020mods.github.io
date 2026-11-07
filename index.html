@@ -1,49 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <input type="checkbox" id="about-toggle" style="display: none;">
+
     <div class="site-wrapper">
+
         <div class="sidebar">
             <div class="sidebar-nav">
                 <a href="index.html" class="nav-item active">mods</a>
                 <a href="about.html" class="nav-item">about</a>
                 <a href="deadmods.html" class="nav-item">dead mods</a>
             </div>
+
             <div class="sidebar-footer">
                 by rap_god20<br>
-                vibecoded shit
             </div>
         </div>
 
         <div class="main-content">
-            <div class="mod-banner">
-                <div class="mod-left-content">
-                    <div class="mod-image-slot">
-                        <img src="logonew.png" alt="mod view">
-                    </div>
-                    <div>
-                        <button class="download-link" onclick="window.open('https://mega.nz/file/IJFUXaqI#hId2Z2ZpCj-NUUY0nAk4AJTxEWT_PniNImxOacUEeHk', '_blank')">
-                            DOWNLOAD ON MEGA
-                        </button>
-                    </div>
+
+            <div class="header-actions">
+                <label for="about-toggle" class="about-label">about ▼</label>
+            </div>
+
+            <div class="mod-container">
+                <div class="mod-banner">
+                    <img src="logonew.png" alt="outnumber MOD by VasilyHQD x rap_god20">
                 </div>
+            </div>
 
-                <div>
-                    <input type="checkbox" id="about-toggle">
-                    <label for="about-toggle" class="about-label-right">about<span class="about-arrow">▼</span></label>
+            <div class="pagination">
+                <span class="page-num">1</span>
+            </div>
 
-                    <div class="about-text-block">
-                        1
+        </div>
+
+        <div class="about-text-block">
+            <div class="about-header">
+                <label for="about-toggle" class="close-about">[-]</label>
+            </div>
+            <div class="about-content">
+                <h3>outnumber</h3>
+
+                <div class="download-section">
+                    <div class="file-meta">
+                        <div><strong>Date:</strong> 04.08.2026</div>
+                        <div><strong>Size:</strong> 216 MB</div>
                     </div>
+
+                    <a href="https://mega.nz" class="download-btn-mega" target="_blank" rel="noopener noreferrer">
+                        <span class="btn-icon">⬇</span> Download on MEGA
+                    </a>
                 </div>
             </div>
         </div>
+
     </div>
 
 </body>
